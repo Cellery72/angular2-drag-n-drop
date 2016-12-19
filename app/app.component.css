@@ -1,19 +1,7 @@
-/* -- MAIN WRAPPER -- */
-/* ------------------ */
-#main-wrapper {
-    padding: 0 0 30px;
-    position: relative;
-}
-.content{
-    height:100vh;
-}
 /*    -- NAVBAR --    */
 /* ------------------ */
-header{
-    padding-bottom:25px;
-}
 .navbar{
-    background-color: #40146A !important;
+    background-color: #1B9937 !important;
 }
 .navbar-brand {
     text-align: center;
@@ -25,15 +13,12 @@ header{
     width: 100%;
     font-size: 1.8em;
 }
-#social a{
-    padding-left: 5px;
-    padding-right: 5px;
-    font-size: 1.2em;
+
+header{
+    padding-bottom:25px;
 }
 
-.spacer{
-    padding-top:50px;
-}
+
 
 /*    -- FOOTER --    */
 /* ------------------ */

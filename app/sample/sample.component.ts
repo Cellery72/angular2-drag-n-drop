@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'home',
-  template: require('./home.component.html'),
-  styles: [require('./home.component.css')]
+  template: require('./sample.component.html'),
+  styles: [require('./sample.component.css')]
 })
-export class HomeComponent implements OnInit {
+export class SampleComponent implements OnInit {
   title: string = 'Home Page';
   body: string = 'This is the about home body';
   message: string;
