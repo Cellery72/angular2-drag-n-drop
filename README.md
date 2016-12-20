@@ -8,3 +8,6 @@ This repo consists of a simple Angular 2 application using [ng2-dragula](https:/
 3. `npm install`
 4. `npm start` to build/start sample app
 
+
+##Screenshot
+![Screenshot](http://i.imgur.com/pcOOxUK.png)
