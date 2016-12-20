@@ -1,24 +1,74 @@
 <div class="container">
+  <!-- Intro -->
   <div class="row">
-    <div class="col-md-8 offset-md-2">
-      <p class="lead" id="title">These are simple drag-n-drop examples I created using <a href="http://valor-software.com/ng2-dragula/index.html" target="_blank">ng2-dragula</a>.
-        Examples are great and all, but the way I learned best was my creating some of my own (these ones)!</p>
+    <div class="col-md-10 offset-md-1">
+      <p class="lead title text-xs-center">These are simple drag-n-drop examples I created using <a href="https://github.com/valor-software/ng2-dragula" target="_blank">ng2-dragula</a>.
+        Examples are great and all, but the way I learned best was by creating some of my own (the ones you're looking at!).
+        If you want to learn how to use ng2-dragula, I challenge you to build a replica of these demonsatrations</p>
     </div>
   </div>
+  <!-- Basic Example -->
   <div class="row" id="basic_example">
-    <div class='parent'>
-      <div class='wrapper'>
-        <div class="bucket col-md-6" [dragula]='"first-bag"'>
-          <div>You can move these elements between these two containers</div>
-          <div>Moving them anywhere else isn't quite possible</div>
-          <div>There's also the possibility of moving elements around in the same container, changing their position
+    <div class="parent">
+      <div class="col-md-12">
+        <div class="row">
+          <h2 class="title text-xs-center"> The Basic Example</h2>
+          <div class="bucket col-md-5 offset-md-1" [dragula]='"first-bag"'>
+            <p>You can move these elements between these two containers</p>
+            <p>Moving them anywhere else isn't quite possible</p>
+            <p>There's also the possibility of moving elements around in the same container, changing their position
+            </p>
+          </div>
+          <div class="bucket col-md-5 offset-md-1" [dragula]='"first-bag"'>
+            <p>This is the default use case. You only need to specify the containers you want to use</p>
+            <p>More interactive use cases lie ahead</p>
+            <p>Make sure to check out the <a href='https://github.com/bevacqua/dragula#readme'>documentation on
+                GitHub!</a></p>
           </div>
         </div>
-        <div class="bucket col-md-6" [dragula]='"first-bag"'>
-          <div>This is the default use case. You only need to specify the containers you want to use</div>
-          <div>More interactive use cases lie ahead</div>
-          <div>Make sure to check out the <a href='https://github.com/bevacqua/dragula#readme'>documentation on
-                GitHub!</a></div>
+      </div>
+    </div>
+  </div>
+  <!-- Custom Example -->
+  <div class="row" id="custom_example">
+    <div class="row">
+      <h2 class="title text-xs-center"> My Custom Example</h2>
+      <div class="col-md-5 offset-md-1">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+            </tr>
+          </thead>
+          <tbody [dragula]='"second-bag"'>
+            <tr>
+              <th scope="row">87</th>
+              <td>Sidney</td>
+              <td>Crosby</td>
+            </tr>
+            <tr>
+              <th scope="row">97</th>
+              <td>Connor</td>
+              <td>McDavid</td>
+            </tr>
+            <tr>
+              <th scope="row">71</th>
+              <td>Evgeni</td>
+              <td>Malkin</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-5 offset-md-1">
+        <div class="container">
+          <div class="col-md-4 circle" [dragula]='"second-bag"'>
+          </div>
+          <div class="col-md-4 circle" [dragula]='"second-bag"'>
+          </div>
+          <div class="col-md-4 circle" [dragula]='"second-bag"'>
+          </div>
         </div>
       </div>
     </div>

@@ -1,10 +1,13 @@
-#title {
+.title {
     padding-top: 50px;
-    text-align: center;
+    padding-bottom: 10px;
 }
 
 #basic_example {
-    padding-top: 50px;
+    padding-top: 10px;
+}
+#custom_example {
+    padding-top: 25px;
 }
 
 #left-side {
@@ -19,31 +22,39 @@
     background-color: #15A034;
 }
 
+.circle {
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    background-color: grey;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+tbody{
+    min-height:500px;
+}
 
 /* BUCKET CSS  */
 
-.bucket div,
+.bucket p,
 .gu-mirror {
     margin: 10px;
     padding: 10px;
     transition: opacity 0.4s ease-in-out;
     background-color: #37AB51
-
 }
 
-.bucket div {
+.bucket p {
     cursor: move;
     cursor: grab;
     cursor: -moz-grab;
     cursor: -webkit-grab;
 }
 
-.bucket:nth-child(even) {
-    background-color: #1A9936;
-}
-
-.bucket:nth-child(odd) {
+.bucket {
     background-color: #0B7823;
+    border: solid 2px #003D0D;
+    min-height: 50px;
 }
 
 .bucket .ex-moved {
@@ -52,4 +63,33 @@
 
 .bucket.ex-over {
     background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+/* The dragula.min.css used to properly display the dragging effect */
+
+.gu-mirror {
+    position: fixed!important;
+    margin: 0!important;
+    z-index: 9999!important;
+    opacity: .8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80)
+}
+
+.gu-hide {
+    display: none!important
+}
+
+.gu-unselectable {
+    -webkit-user-select: none!important;
+    -moz-user-select: none!important;
+    -ms-user-select: none!important;
+    user-select: none!important
+}
+
+.gu-transit {
+    opacity: .2;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20)
 }
